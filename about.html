@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ka Pui Man">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>About</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/shroud.jpg">
+    <script src="scripts/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("F6t6rPzHLC800XwN3");
+        })();
+    </script>
+</head>
+
+<body class="active">
+
+    <!-- Header/ Navigation-Bar -->
+    <header class="active">
+        <nav class="navibar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <div class="container" id="container-navibar">
+
+                <a href="index.html" class="navibar-brand">Ka Pui Man's Portfolio</a>
+
+                <div class="navibar-navi">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="uses.html" class="current">About</a></li>
+                        <li><a href="uses.html">Uses</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="https://github.com/fairywizard15" target="_blank">GitHub</a></li>
+                        <li><img src="img/moon.png" id="icon" alt="" onclick="toggleDarkMode()"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- About Me -->
+    <main>
+        <section class="about" id="about" data-aos="fade-down">
+            <div class="container">
+                <div class="about-content">
+                    <div>
+                        <img src="img/myself.jpg" alt="" class="portfolio-image">
+                    </div>
+                    <div class="about-text">
+                        <div class="title">
+                            <h2>Just a little bit about me</h2>
+                            <p>Who am I?</p>
+                        </div>
+                        <p>My name is Ka Pui Man, I am currently studying software engineering in De Montfort University.</p>
+                        <p>In this page I will be showing you all my experience from my previous studies, if you would like to know more about my experience, feel free to download my CV in my <a href="index.html">homepage</a>.</p>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <section class="portfolio-border" data-aos="fade-right">
+                    <div class="portfolio-box">
+                        <i id="left-1" class="fab fa-java fa-8x"></i>
+                        <h2>Studied Java from 2021 in De Montfort, understanding of using Java, studied the uses of Object-Oriented Programming and basic Java application UI design.</h2>
+                    </div>
+                </section>
+
+                <!--HTML5-->
+                <section class="portfolio-border" data-aos="fade-left">
+                    <div class="portfolio-box">
+                        <h2>I've studied and used HTML5 as main web development language since my college studies. Understand the fundamental the uses of HTML, confident develop websites from scratch by using HTML.</h2>
+                        <i id="right-1" class="fab fa-html5 fa-8x"></i>
+                    </div>
+                </section>
+
+                <!-- CSS -->
+                <section class="portfolio-border" data-aos="fade-right">
+                    <div class="portfolio-box">
+                        <i id="left-2" class="fab fa-css3 fa-8x"></i>
+                        <h2>Studied CSS alongside with my previous HTML5 studies. Be able to develop the basic webpage styling skills, currently studying the use of webpage animation and more advance styling techniques in order to expand my web development
+                            skills in the future.</h2>
+                    </div>
+                </section>
+
+                <!--JavaScript-->
+                <section class="portfolio-border" data-aos="fade-left">
+                    <div class="portfolio-box">
+                        <h2>First studied JavaScript in 2022 during my web development module in De Montfort University. Studied the basic functionality of JavaScript. However, more advanced techniques require in order to maintain better web pages interactive.</h2>
+                        <i id="right-2" class="fab fa-js fa-8x"></i>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <p>Any questions please do not hesitate to contact me by send me an email or use <a href="mailto: mankapui1215@gmail.com" class="email-link">this</a>.</p>
+            <div class="input-field">
+                <input type="text" id="fromName" placeholder="Your Name">
+                <textarea id="msg" placeholder="Message"></textarea>
+                <button onclick="sendEmail()">Send Email</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="insider">
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/man.akp.10/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.linkedin.com/in/anthony-man-28090b1bb" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/fairywizard15" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <h1 class="footer-title">
+                About
+                <span>&copy; 2022 Ka Pui Man's Portfolio Designed by Ka Pui Man</span>
+            </h1>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <button onclick="topFunction()" id="gotothetop"><i class="fas fa-arrow-up"></i></button>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

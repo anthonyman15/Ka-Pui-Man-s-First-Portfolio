@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ka Pui Man">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Projects</title>
+</head>
+
+<body class="active">
+
+    <!-- Header/ Navigation-Bar -->
+    <header class="active">
+        <nav class="navibar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <div class="container" id="container-navibar">
+                <a href="index.html" class="navibar-brand">Ka Pui Man's Portfolio</a>
+                <div class="navibar-navi">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="uses.html">Uses</a></li>
+                        <li><a href="projects.html" class="current">Projects</a></li>
+                        <li><a href="https://github.com/fairywizard15" target="_blank">GitHub</a></li>
+                        <li><img src="img/moon.png" id="icon" alt="" onclick="toggleDarkMode()"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Project Description -->
+    <!-- Java Project -->
+    <section class="project" id="project">
+        <div class="container">
+            <div class="project-content" data-aos="fade-right">
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio-btn1">
+                        <input type="radio" name="radio-btn" id="radio-btn2">
+                        <input type="radio" name="radio-btn" id="radio-btn3">
+                        <input type="radio" name="radio-btn" id="radio-btn4">
+                        <div class="slide first">
+                            <img src="img/Page1.PNG" alt="" class="project-img">
+                        </div>
+                        <div class="slide">
+                            <img src="img/Page2.PNG" alt="" class="project-img">
+                        </div>
+                        <div class="slide">
+                            <img src="img/Page3.PNG" alt="" class="project-img">
+                        </div>
+                        <div class="slide">
+                            <img src="img/Page4.PNG" alt="" class="project-img">
+                        </div>
+                        <!-- Auto Slide Show Start -->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio-btn1" class="manual-btn"></label>
+                        <label for="radio-btn2" class="manual-btn"></label>
+                        <label for="radio-btn3" class="manual-btn"></label>
+                        <label for="radio-btn4" class="manual-btn"></label>
+                    </div>
+                </div>
+                <div class="project-text">
+                    <div class="title">
+                        <h2>Project #1</h2>
+                        <p>First Java UI Project - Final Year Module Selection</p>
+                    </div>
+                    <p>This is my university assignment project that I had previously completed using object-oriented programming style method. This program allows students to select their final modules by choose the enrolled course.</p>
+                    <p>Both courses have cap to max 60 credits for each semester, both courses will have their default selected courses, Development Project and Systems Building: Methods for Computer Science and Development Project, Systems Buidling: Methods
+                        and Rigorous Systems for Software Engineering. Once the course type has been selected, user will be able to select their prefer modules, as modules credits capped at 120 in total, 60 for each semester, beside with default modules
+                        counted towards to the calculated credits. System prevents user select extra modules more than needed. Reserve modules allows user to select modules if the selected is fulled, in reserve modules page it filtered out the already
+                        selected modules from the previous page. Finally user can overview their selection in the overview page with their entered student details, and be able to save the overivew for next time access.</p>
+                </div>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="project-content" data-aos="fade-left">
+                <div class="project-text">
+                    <div class="title">
+                        <h2>Project #2</h2>
+                        <p>Personal Portfolio Website</p>
+                    </div>
+                    <p>This is my first web development based on my knowledge from my preivous college studies. In this project I've attempted to combine 3 web development languages first time in developing a website, HTML5, CSS3 and JavaScript.</p>
+                    <p>In this porfolio I have used an API as a free direct sent emails from client-side JavaScript code, EmailJS. Very useful JavaScript which enables user to give in touch with me, as well as to demonstrate a live project example during
+                        my job interview in my future career.</p>
+                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide first">
+                            <img src="img/Portfolio.PNG" alt="" class="project-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Year Project -->
+            <div class="project-content" data-aos="fade-right">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide first">
+                            <img src="img/FYP.PNG" alt="" class="project-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-text">
+                    <div class="title">
+                        <h2>Project #3</h2>
+                        <p>Final Year Project - The Galaxy Guardian</p>
+                    </div>
+                    <p>The Galaxy Guardian is one of the biggest programming project that I've done currently, also this is my first game development project. I faced few challenges and be able to sort it alongside with some reliable and generous advice
+                        from my university supervisor, Stuart O'Connor. Without his support, I don't think this project will be possible to come this far.</p>
+                    <p>This is my first experience of using one of the biggest and popular game engine, Unity. It has the level of difficulty of understanding the uses of features and layout systems. However, Unity has its own pre-built in functionalities
+                        to support developers to create an easier game development situation, which saves me a good amount of time of re-create something that already existed in Unity.</p>
+                    <p>Galaxy Guardian is a single player round-based top-down shooter survival game, based on platform mobile (Android). Player’s Objective is to survive as many rounds as possible by avoiding components wave attacks. Points earn by eliminating
+                        enemies. Spend points to upgrade equipment and purchase perks for player abilities. </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="insider">
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/man.akp.10/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.linkedin.com/in/anthony-man-28090b1bb" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/fairywizard15" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <h1 class="footer-title">
+                Projects
+                <span>&copy; 2022 Ka Pui Man's Portfolio Designed by Ka Pui Man</span>
+            </h1>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <button onclick="topFunction()" id="gotothetop"><i class="fas fa-arrow-up"></i></button>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
